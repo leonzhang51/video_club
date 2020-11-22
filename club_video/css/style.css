@@ -1,0 +1,269 @@
+/* 1- CSS reset
+   ____________ */
+
+html,
+body,
+img,
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    }
+
+/* 2- règles générales
+   ___________________ */
+
+body { 
+	width: 90%;
+	margin: auto;
+	margin-top: 0;
+	text-align: left;
+	font-family: Tahoma, sans-serif; 
+	font-size: 14px;
+	}
+
+h1, h2, h3, a {
+    color: dodgerblue;
+    }
+
+h1 {
+    margin: 20px 0 30px;
+    }
+
+h1 a {
+    text-decoration: none;
+    }
+
+p {
+    margin-top: 20px;
+    }
+
+ul {
+    margin-top: 25px;
+    }
+
+.err, form span {
+    color: rgb(192, 0, 0);
+    }
+
+/* 3- formulaires
+   ______________ */
+
+span {
+    display: block;
+    padding: 5px 0 20px;
+    }
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    }
+
+input, select {
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 5px;
+    line-height: 24px;
+    border: 1px solid #777;
+    border-radius: 3px;
+	font-family: Tahoma, sans-serif;  
+	font-size: 14px;
+	}
+
+input[type="submit"] {
+	background-color: #eee;
+    cursor: pointer;
+	}
+
+/* 3.1- formulaire d'authentification
+   __________________________________ */        
+
+#authentification label {
+    padding-top: 20px;
+    }
+
+#authentification input[type="submit"] {
+    margin-top: 50px;   
+    }
+
+/* 3.2- formulaire d'inscription
+   _____________________________ */        
+
+#inscription {
+    margin-top: 30px;
+    }
+
+/* 4- en-tête	
+   __________ */
+
+header  {
+    display: flex;
+    justify-content: space-between;
+    }
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    }
+
+header ul li {
+    padding-left: 50px;
+    }
+	
+/* 5- main	
+   _______ */
+
+main {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+
+	
+/* 5.1- main des pages index et confirme-commande	
+   ______________________________________________ */	
+
+.mes {
+    font-weight: bold;
+    color: forestgreen;
+    }
+
+.qte {
+    color: rgb(192, 0, 0);
+    }
+
+#cat {
+	font-size: 12px;
+	}
+
+#cat > header {
+    display: flex;
+    justify-content: flex-start;
+    }
+
+#cat h2 {
+    margin: 7px 30px 7px 0;
+    }
+
+#cat span{
+	display: block;
+	height: 0;
+	text-align: right;
+    
+	}
+
+
+section {
+    clear: both;
+    }
+
+.cache {
+    display: none;
+    }
+
+#cat h3 {
+    clear: both;
+	margin: 0;
+	padding: 30px 0 3px 0;
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+    }	
+
+#cat table {
+    width: 100%;
+	border-collapse: collapse;
+    }
+
+#cat th {
+	text-align: center;
+	color: dodgerblue;
+	}
+
+#cat th, #cat td {
+	padding: 1%;
+	}
+
+#cat input[type="submit"] {
+    float: right;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    }	
+	
+	
+/* 5.1.1- cellules et classes pour l'affichage des colonnes des tableaux résultats	
+   _______________________________________________________________________________ */	
+	
+td:nth-of-type(odd) {
+	background-color: #eee;
+    }
+
+td:last-of-type {
+    background: none;
+    }
+
+.droite {
+    text-align: right;
+    }
+
+.num {
+    width: 5%;
+	}
+
+.nom {
+	width: 20%;
+	}
+
+.des {
+	width: 25%;
+	}
+
+.mar {
+	width: 15%;
+	}
+
+.pri {
+    width: 10%;
+    }
+
+.com {
+    width: 15%;
+    padding-right: 2%;
+    }
+
+.cum {
+    width: 10%;
+    background-color: #eee;
+	}
+
+.sel {
+    display: block;
+	width: 80%;
+    margin: auto;
+	}
+
+.enStock {
+    color: forestgreen;
+    font-weight: bold;
+    }
+
+.pasEnStock {
+    color: rgb(192,0,0);
+    font-weight: bold;
+    }
+
+.tot {
+    padding-bottom: 40px;
+    padding-right: 1%;
+    text-align: right;
+    font-size: 12px;
+    }
